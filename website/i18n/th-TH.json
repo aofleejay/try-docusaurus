@@ -3,17 +3,14 @@
   "localized-strings": {
     "next": "ต่อไป",
     "previous": "ก่อนหน้า",
-    "tagline": "ตัวอย่างเอกสารที่ใช้ Docusaurus",
-    "api": "วิธีการใช้งาน",
-    "basic": "การใช้งานพื้นฐาน",
-    "getting-started": "เริ่มต้นใช้งาน",
-    "Getting Started": "เริ่มต้นใช้งาน",
+    "tagline": "Express middleware to generate JSON response",
+    "apis": "APIs",
+    "installation": "Installation",
+    "quick-start": "Quick Start",
     "Docs": "เอกสาร",
-    "API": "API",
-    "Help": "วิธีใช้",
+    "APIs": "APIs",
     "Blog": "บล็อก",
-    "Guides": "คำแนะนำ",
-    "Examples": "ตัวอย่าง"
+    "The Basics": "The Basics"
   },
   "pages-strings": {
     "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given": "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
