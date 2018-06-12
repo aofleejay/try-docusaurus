@@ -3,27 +3,16 @@
   "localized-strings": {
     "next": "ต่อไป",
     "previous": "ก่อนหน้า",
-    "tagline": "ตัวอย่างเอกสารที่ใช้ Docusaurus",
-    "api": "วิธีการใช้งาน",
-    "basic": "การใช้งานพื้นฐาน",
-    "getting-started": "เริ่มต้นใช้งาน",
-    "Getting Started": "เริ่มต้นใช้งาน",
+    "tagline": "Express middleware สำหรับสร้าง format JSON response",
+    "apis": "APIs",
+    "installation": "การติดตั้ง",
+    "quick-start": "เริ่มแบบรวดเร็ว",
     "Docs": "เอกสาร",
-    "API": "API",
-    "Help": "วิธีใช้",
+    "APIs": "APIs",
     "Blog": "บล็อก",
-    "Guides": "คำแนะนำ",
-    "Examples": "ตัวอย่าง"
+    "The Basics": "The Basics"
   },
   "pages-strings": {
-    "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)|no description given": "Learn more using the [documentation on this site.](/test-site/docs/en/doc1.html)",
-    "Browse Docs|no description given": "เรียกดูเอกสาร",
-    "Ask questions about the documentation and project|no description given": "Ask questions about the documentation and project",
-    "Join the community|no description given": "Join the community",
-    "Find out what's new with this project|no description given": "Find out what's new with this project",
-    "Stay up to date|no description given": "Stay up to date",
-    "Need help?|no description given": "Need help?",
-    "This project is maintained by a dedicated group of people.|statement made to reader": "This project is maintained by a dedicated group of people.",
     "Help Translate|recruit community translators for your project": "Help Translate",
     "Edit this Doc|recruitment message asking to edit the doc source": "Edit",
     "Translate this Doc|recruitment message asking to translate the docs": "Translate"
