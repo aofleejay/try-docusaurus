@@ -1,5 +1,5 @@
 ---
 id: api
-title: API
+title: วิธีการใช้งาน
 ---
-API usage
+วิธีการใช้งาน
