@@ -1,5 +1,5 @@
 ---
 id: basic
-title: Basic Usage
+title: การใช้งานเบื้องต้น
 ---
-Basic usage
+การใช้งานเบื้องต้น
