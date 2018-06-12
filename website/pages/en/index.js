@@ -80,8 +80,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href={docUrl('getting-started.html', language)}>Guides</Button>
-            <Button href={docUrl('api.html', language)}>API</Button>
+            <Button href={docUrl('installation.html', language)}>The Basics</Button>
+            <Button href={docUrl('apis.html', language)}>APIs</Button>
             <Button href={docUrl('blog', language)}>Blogs</Button>
           </PromoSection>
         </div>
@@ -134,7 +134,7 @@ const LearnHow = props => (
         content: 'Talk about learning how to use this',
         image: imgUrl('docusaurus.svg'),
         imageAlign: 'right',
-        title: 'Learn How',
+        title: 'How to use',
       },
     ]}
   </Block>
