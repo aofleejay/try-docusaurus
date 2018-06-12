@@ -1,10 +1,10 @@
 ---
 id: quick-start
-title: Quick Start
+title: เริ่มแบบรวดเร็ว
 ---
-## Starter Code
+## โค้ดเริ่มต้น
 
-Use as Express middleware
+ใช้เป็น express middleware
 
 ```js
 import express from 'express'
@@ -26,7 +26,7 @@ app.get('/badgateway', (req, res) => res.badGateway())
 app.listen(3000, () => console.log('Start at http://localhost:3000'))
 ```
 
-## Example Usage & Response
+## ตัวอย่างการใช้งานและผลลัพธ์
 
 ### 200 OK
 
@@ -61,7 +61,7 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-### 400 Bad Request With Parameter
+### 400 Bad Request แบบส่ง Parameter
 
 ```js
 res.badRequest('Invalid parameter.')
