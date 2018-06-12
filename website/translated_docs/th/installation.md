@@ -1,12 +1,12 @@
 ---
 id: installation
-title: Installation
+title: การติดตั้ง
 ---
-## Using npm
+## ใช้ npm
 
     npm install expressjs-response --save
     
 
-## Using yarn
+## ใช้ yarn
 
     yarn add expressjs-response
