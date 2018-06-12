@@ -1,7 +1,6 @@
 {
   "docs": {
-    "Guides": ["getting-started"],
-    "API": ["api"],
-    "Examples": ["basic"]
+    "The Basics": ["installation", "quick-start"],
+    "APIs": ["apis"]
   }
 }

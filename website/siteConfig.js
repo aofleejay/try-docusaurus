@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Try Docusaurus' /* title for your website */,
-  tagline: 'Example documentation using Docusaurus',
+  title: 'expressjs-response' /* title for your website */,
+  tagline: 'Express middleware to generate JSON response',
   url: 'https://try-docusaurus.netlify.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -38,9 +38,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'getting-started', label: 'Docs'},
-    {doc: 'api', label: 'API'},
-    {page: 'help', label: 'Help'},
+    {doc: 'installation', label: 'Docs'},
+    {doc: 'apis', label: 'APIs'},
     {blog: true, label: 'Blog'},
   ],
 

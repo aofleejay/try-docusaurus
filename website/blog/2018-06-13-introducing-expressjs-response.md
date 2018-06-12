@@ -1,5 +1,5 @@
 ---
-title: New version 1.0.0
+title: Introducing expressjs-response
 author: Kunapot Pairat
 authorURL: https://www.facebook.com/aofleejay
 authorFBID: 1098079061
