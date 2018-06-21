@@ -1,0 +1,11 @@
+{
+  "version-1.0.0-docs": {
+    "The Basics": [
+      "version-1.0.0-installation",
+      "version-1.0.0-quick-start"
+    ],
+    "APIs": [
+      "version-1.0.0-apis"
+    ]
+  }
+}
