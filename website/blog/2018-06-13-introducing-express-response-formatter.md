@@ -1,5 +1,5 @@
 ---
-title: Introducing expressjs-response
+title: Introducing express-response-formatter
 author: Kunapot Pairat
 authorURL: https://www.facebook.com/aofleejay
 authorFBID: 1098079061

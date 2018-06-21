@@ -21,16 +21,16 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'expressjs-response' /* title for your website */,
-  tagline: 'Express middleware to generate JSON response',
-  url: 'https://try-docusaurus.netlify.com' /* your website url */,
+  title: 'express-response-formatter' /* title for your website */,
+  tagline: 'Format express json response with "express-response-formatter"',
+  url: 'https://express-response-formatter.netlify.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'try-docusaurus',
+  projectName: 'express-response-formatter',
   organizationName: 'aofleejay',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...

@@ -5,10 +5,10 @@ title: Installation
 
 ## Using npm ##
 ```
-npm install expressjs-response --save
+npm install express-response-formatter --save
 ```
 
 ## Using yarn ##
 ```
-yarn add expressjs-response
+yarn add express-response-formatter
 ```
