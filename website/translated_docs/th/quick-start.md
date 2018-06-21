@@ -4,94 +4,107 @@ title: เริ่มแบบรวดเร็ว
 ---
 ## โค้ดเริ่มต้น
 
-ใช้เป็น express middleware
+Example usage
 
 ```js
-import express from 'express'
-import responseEnhancer from 'expressjs-response'
+const app = require('express')()
+const responseEnhancer = require('express-response-formatter')
 
-const app = express()
+// Add formatter functions to "res" object via "responseEnhancer()"
+app.use(responseEnhancer())
 
-// use in express middleware
-app.use(responseEnhancer({
-  withStatusCode: true, // Include status code in response body.
-  withStatusMessage: true, // Include status message in response body.
-}))
+app.get('/success', (req, res) => {
+  const users = [
+    { name: 'Dana Kennedy' },
+    { name: 'Warren Young' },
+  ]
 
-// example usage
-app.get('/success', (req, res) => res.ok({ name: 'John Doe' }))
-app.get('/badrequest', (req, res) => res.badRequest('Invalid parameter.'))
-app.get('/badgateway', (req, res) => res.badGateway())
+  // It's enhance "res" with "formatter" which contain formatter functions
+  res.formatter.ok(users)
+})
 
 app.listen(3000, () => console.log('Start at http://localhost:3000'))
 ```
 
-## ตัวอย่างการใช้งานและผลลัพธ์
+Result
 
-### 200 OK
+```json
+HTTP/1.1 200 Ok
+{
+  "data": [
+    {
+      "name": "Dana Kennedy"
+    },
+    {
+      "name": "Warren Young"
+    }
+  ]
+}
+```
+
+## More usages
+
+### 200 OK with "meta field"
 
 ```js
-res.ok({ name: 'John Doe' })
+app.get('/success-with-meta', (req, res) => {
+  const users = [
+    { name: 'Dana Kennedy' },
+    { name: 'Warren Young' },
+  ]
+
+  const meta = {
+    total: 2,
+    limit: 10,
+    offset: 0,
+  }
+
+  res.formatter.ok(users, meta)
+})
 ```
 
 ```json
 HTTP/1.1 200 Ok
 {
-    "status": "success",
-    "data": {
-        "name": "John Doe"
+  "meta": {
+    "total": 2,
+    "limit": 10,
+    "offset": 0,
+  },
+  "data": [
+    {
+      "name": "Dana Kennedy"
+    },
+    {
+      "name": "Warren Young"
     }
+  ]
 }
 ```
 
-### 400 Bad Request
+### 400 Bad Request with "multiple errors"
 
 ```js
-res.badRequest()
+app.get('/bad-request', (req, res) => {
+  const errors = [
+    { detail: 'Field id is required.' },
+    { detail: 'Field foo is required.' },
+  ]
+
+  res.formatter.badRequest(errors)
+})
 ```
 
 ```json
 HTTP/1.1 400 Bad Request
 {
-    "status": "fail",
-    "error": {
-        "code": "400",
-        "message": "Bad Request"
+  "errors": [
+    {
+      "detail": "Field id is required."
+    },
+    {
+      "detail": "Field foo is required."
     }
-}
-```
-
-### 400 Bad Request แบบส่ง Parameter
-
-```js
-res.badRequest('Invalid parameter.')
-```
-
-```json
-HTTP/1.1 400 Bad Request
-{
-    "status": "fail",
-    "error": {
-        "code": "400",
-        "message": "Bad Request",
-        "detail": "Invalid parameter."
-    }
-}
-```
-
-### 502 Bad Gateway
-
-```js
-res.badGateway()
-```
-
-```json
-HTTP/1.1 502 Bad Gateway
-{
-    "status": "error",
-    "error": {
-        "code": "502",
-        "message": "Bad Gateway"
-    }
+  ]
 }
 ```
