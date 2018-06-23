@@ -3,13 +3,14 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Format express json response with \"express-response-formatter\"",
+    "tagline": "Better way to format Express response",
     "apis": "APIs",
     "installation": "Installation",
     "quick-start": "Quick Start",
     "Docs": "Docs",
     "APIs": "APIs",
     "Blog": "Blog",
+    "GitHub": "GitHub",
     "The Basics": "The Basics"
   },
   "pages-strings": {

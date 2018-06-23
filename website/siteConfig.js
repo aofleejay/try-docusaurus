@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'express-response-formatter' /* title for your website */,
-  tagline: 'Format express json response with "express-response-formatter"',
+  tagline: 'Better way to format Express response',
   url: 'https://express-response-formatter.netlify.com' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -41,20 +41,22 @@ const siteConfig = {
     {doc: 'installation', label: 'Docs'},
     {doc: 'apis', label: 'APIs'},
     {blog: true, label: 'Blog'},
+    {href: 'https://github.com/aofleejay/express-response-formatter', label: 'GitHub'},
+    { search: true },
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/white-logo.png',
+  footerIcon: 'img/white-logo.png',
+  favicon: 'img/black-logo.png',
 
   /* colors for website */
   colors: {
-    primaryColor: '#32969A',
-    secondaryColor: '#272531',
+    primaryColor: '#0A0400',
+    secondaryColor: '#FDD000',
   },
 
   /* custom fonts for website */
