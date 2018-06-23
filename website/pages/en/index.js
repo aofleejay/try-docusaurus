@@ -129,10 +129,10 @@ const LearnHow = props => (
   <Block background="light">
     {[
       {
-        content: 'Talk about learning how to use this',
-        image: imgUrl('docusaurus.svg'),
+        content: 'It\'s just a middleware.',
+        image: imgUrl('how-to-use.png'),
         imageAlign: 'right',
-        title: 'How to use',
+        title: 'Easy to use',
       },
     ]}
   </Block>
@@ -142,10 +142,10 @@ const TryOut = props => (
   <Block id="try">
     {[
       {
-        content: 'Talk about trying this out',
-        image: imgUrl('docusaurus.svg'),
+        content: 'It\'s enhance "res" with "formatter" which contain formatter functions.',
+        image: imgUrl('example-usage.png'),
         imageAlign: 'left',
-        title: 'Try it Out',
+        title: 'Example usage',
       },
     ]}
   </Block>
@@ -203,10 +203,10 @@ class Index extends React.Component {
         <HomeSplash language={language} />
         <div className="mainContainer">
           {/* <Features />
-          <FeatureCallout />
+          <FeatureCallout /> */}
           <LearnHow />
           <TryOut />
-          <Description />
+          {/* <Description />
           <Showcase language={language} /> */}
         </div>
       </div>
