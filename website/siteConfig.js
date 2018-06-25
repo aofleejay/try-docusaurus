@@ -44,6 +44,12 @@ const siteConfig = {
     {href: 'https://github.com/aofleejay/express-response-formatter', label: 'GitHub'},
     { search: true },
   ],
+  
+  algolia: {
+    apiKey: 'e1c28b81e5932ebb6d4c6a85b3b0824f',
+    indexName: 'express-response-formatter',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // If you have users set above, you add it here:
   users,
