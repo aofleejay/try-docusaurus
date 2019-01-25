@@ -2,18 +2,18 @@
 id: apis
 title: APIs
 ---
-| METHOD                    | CODE | PARAMS                         |
-| ------------------------- | ---- | ------------------------------ |
-| res.ok()                  | 200  | res.ok(data)                   |
-| res.created()             | 201  | res.created(data)              |
-| res.noContent()           | 204  | -                              |
-| res.badRequest()          | 400  | res.badRequest(error)          |
-| res.unauthorized()        | 401  | res.unauthorized(error)        |
-| res.forbidden()           | 403  | res.forbidden(error)           |
-| res.notFound()            | 404  | res.notFound(error)            |
-| res.methodNotAllowed()    | 405  | res.methodNotAllowed(error)    |
-| res.unprocessableEntity() | 422  | res.unprocessableEntity(error) |
-| res.internalServerError() | 500  | res.internalServerError(error) |
-| res.badGateway()          | 502  | res.badGateway(error)          |
-| res.serviceUnavailable()  | 503  | res.serviceUnavailable(error)  |
-| res.gatewayTimeout()      | 504  | res.gatewayTimeout(error)      |
+| METHOD                                   | STATUS CODE |
+| ---------------------------------------- | ----------- |
+| res.formatter.ok(data, meta?)            | 200         |
+| res.formatter.created(data, meta?)       | 201         |
+| res.formatter.noContent(data, meta?)     | 204         |
+| res.formatter.badRequest(errors)         | 400         |
+| res.formatter.unauthorized(errors)       | 401         |
+| res.formatter.forbidden(errors)          | 403         |
+| res.formatter.notFound(errors)           | 404         |
+| res.formatter.methodNotAllowed(errors)   | 405         |
+| res.formatter.unprocess(errors)          | 422         |
+| res.formatter.serverError(errors)        | 500         |
+| res.formatter.badGateway(errors)         | 502         |
+| res.formatter.serviceUnavailable(errors) | 503         |
+| res.formatter.gatewayTimeout(errors)     | 504         |

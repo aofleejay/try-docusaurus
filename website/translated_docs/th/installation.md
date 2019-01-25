@@ -4,9 +4,9 @@ title: การติดตั้ง
 ---
 ## ใช้ npm
 
-    npm install expressjs-response --save
+    npm install express-response-formatter --save
     
 
 ## ใช้ yarn
 
-    yarn add expressjs-response
+    yarn add express-response-formatter

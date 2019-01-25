@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "ต่อไป",
     "previous": "ก่อนหน้า",
-    "tagline": "Express middleware สำหรับสร้าง format JSON response",
+    "tagline": "Format express json response with \"express-response-formatter\"",
     "apis": "APIs",
     "installation": "การติดตั้ง",
     "quick-start": "เริ่มแบบรวดเร็ว",
